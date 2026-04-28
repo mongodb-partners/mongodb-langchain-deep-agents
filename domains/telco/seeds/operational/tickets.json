@@ -1,0 +1,7 @@
+[
+  {"_id": "tkt_T80001", "subscriber_id": "sub_T001", "opened_at": "2026-04-25T08:05:00Z", "category": "dropped-calls", "severity": "P3", "status": "open", "mttr_target_min": 1440},
+  {"_id": "tkt_T80002", "subscriber_id": "sub_T002", "opened_at": "2026-04-25T14:31:00Z", "category": "slow-data", "severity": "P3", "status": "in-progress", "mttr_target_min": 1440},
+  {"_id": "tkt_T80003", "subscriber_id": "sub_T004", "opened_at": "2026-04-23T02:45:00Z", "category": "sim-swap-request", "severity": "P2", "status": "fraud-review", "mttr_target_min": 240},
+  {"_id": "tkt_T80004", "subscriber_id": null, "opened_at": "2026-04-26T12:00:00Z", "category": "cell-outage-tower-A114", "severity": "P1", "status": "open", "mttr_target_min": 90},
+  {"_id": "tkt_T80005", "subscriber_id": "sub_T005", "opened_at": "2026-04-24T19:10:00Z", "category": "ott-call-quality", "severity": "P4", "status": "closed-ott", "mttr_target_min": null}
+]

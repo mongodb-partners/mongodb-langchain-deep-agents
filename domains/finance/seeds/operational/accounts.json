@@ -1,0 +1,7 @@
+[
+  {"_id": "acct_F1001", "customer_id": "cust_F501", "type": "CHECKING", "opened": "2022-05-14", "balance": 4821.17, "status": "active"},
+  {"_id": "acct_F1002", "customer_id": "cust_F501", "type": "SAVINGS", "opened": "2022-05-14", "balance": 15200.00, "status": "active"},
+  {"_id": "acct_F1003", "customer_id": "cust_F502", "type": "CREDIT_CARD", "opened": "2023-11-02", "balance": -1287.45, "status": "active"},
+  {"_id": "acct_F1004", "customer_id": "cust_F503", "type": "CHECKING", "opened": "2021-03-30", "balance": 210.05, "status": "frozen-fraud-review"},
+  {"_id": "acct_F1005", "customer_id": "cust_F504", "type": "CHECKING", "opened": "2026-01-08", "balance": 75.00, "status": "active"}
+]

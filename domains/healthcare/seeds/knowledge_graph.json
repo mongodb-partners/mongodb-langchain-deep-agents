@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Vancomycin is a glycopeptide antibiotic. It is first-line for non-severe Clostridioides difficile infection. Metronidazole was historically first-line but is now reserved for adjunctive IV use in fulminant CDI.",
+    "metadata": {"source": "kg/cdi-treatment"}
+  },
+  {
+    "text": "Sepsis is diagnosed by Sepsis-3 criteria: suspected infection plus SOFA score increase of at least 2. Septic shock adds persistent hypotension requiring vasopressors to maintain MAP >= 65 mmHg despite adequate fluid resuscitation.",
+    "metadata": {"source": "kg/sepsis-definition"}
+  },
+  {
+    "text": "C. difficile is transmitted fecal-orally via spores. Contact precautions with soap-and-water handwashing (alcohol gel does not kill spores) are required for infected patients. Terminal cleaning uses sporicidal agents such as bleach.",
+    "metadata": {"source": "kg/cdi-infection-control"}
+  },
+  {
+    "text": "Fidaxomicin is a macrocyclic antibiotic with narrower spectrum than vancomycin. It preserves the gut microbiome better and reduces recurrence rates in non-severe CDI. Cost is the principal barrier to routine first-line use.",
+    "metadata": {"source": "kg/fidaxomicin"}
+  }
+]

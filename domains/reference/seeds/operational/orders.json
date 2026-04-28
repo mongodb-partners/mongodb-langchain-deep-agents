@@ -1,0 +1,4 @@
+[
+  {"_id": "o-2001", "customer_id": "c-1001", "amount": 1200, "status": "fulfilled"},
+  {"_id": "o-2002", "customer_id": "c-1002", "amount": 450, "status": "pending"}
+]

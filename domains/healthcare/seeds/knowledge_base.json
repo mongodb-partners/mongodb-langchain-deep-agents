@@ -1,0 +1,30 @@
+[
+  {
+    "text": "First-line treatment for non-severe adult Clostridioides difficile infection is oral vancomycin 125 mg four times daily for 10 days per the IDSA 2021 guideline. Fidaxomicin 200 mg twice daily for 10 days is an alternative with lower recurrence.",
+    "metadata": {"source": "guideline/idsa-cdi-2021", "category": "infectious-disease"}
+  },
+  {
+    "text": "The Surviving Sepsis Campaign 1-hour bundle requires lactate measurement, blood cultures before antibiotics, broad-spectrum antibiotic administration, 30 mL/kg crystalloid for hypotension or lactate greater than 4 mmol/L, and vasopressors for MAP under 65 mmHg after fluids.",
+    "metadata": {"source": "guideline/ssc-2021-bundle", "category": "critical-care"}
+  },
+  {
+    "text": "The CDC core elements of antibiotic stewardship are leadership commitment, accountability, pharmacy expertise, action (prospective audit with feedback or pre-authorization), tracking, reporting, and education.",
+    "metadata": {"source": "guideline/cdc-stewardship-core-elements", "category": "stewardship"}
+  },
+  {
+    "text": "HIPAA Safe Harbor de-identification removes 18 identifiers including name, geographic subdivisions smaller than state, dates (except year) tied to an individual, and ages over 89. Retaining only year of birth keeps a record de-identified under Safe Harbor.",
+    "metadata": {"source": "policy/hipaa-safe-harbor", "category": "privacy"}
+  },
+  {
+    "text": "CMS Conditions of Participation require that discharge planning begin within 24 hours of admission for hospitalized patients, and that the evaluation include post-acute care needs, caregiver availability, and likelihood of readmission.",
+    "metadata": {"source": "policy/cms-discharge-planning-482.43", "category": "discharge"}
+  },
+  {
+    "text": "Severe C. difficile infection is defined by WBC >= 15,000 cells/microL or serum creatinine >= 1.5 mg/dL. Fulminant CDI adds ileus, megacolon, or hypotension; treat with oral vancomycin 500 mg four times daily plus IV metronidazole 500 mg every 8 hours.",
+    "metadata": {"source": "guideline/idsa-cdi-2021-severity", "category": "infectious-disease"}
+  },
+  {
+    "text": "Sepsis bundle compliance is audited against SEP-1 core measure. Exclusions include comfort-care status, pregnancy, and transfer-in sepsis (clock starts at the sending facility).",
+    "metadata": {"source": "policy/cms-sep-1", "category": "quality"}
+  }
+]

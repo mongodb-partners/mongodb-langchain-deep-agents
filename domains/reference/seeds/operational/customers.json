@@ -1,0 +1,4 @@
+[
+  {"_id": "c-1001", "name": "Acme Research", "tier": "enterprise"},
+  {"_id": "c-1002", "name": "Globex Labs", "tier": "standard"}
+]

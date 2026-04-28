@@ -1,0 +1,9 @@
+[
+  {"_id": "txn_F90001", "account_id": "acct_F1001", "ts": "2026-04-20T14:02:00Z", "amount": -42.17, "type": "CARD_DEBIT", "counterparty": "Coffee Shop 42", "channel": "POS"},
+  {"_id": "txn_F90002", "account_id": "acct_F1001", "ts": "2026-04-21T09:30:00Z", "amount": -1500.00, "type": "WIRE_OUT", "counterparty": "unknown-intermediary", "channel": "online"},
+  {"_id": "txn_F90003", "account_id": "acct_F1002", "ts": "2026-04-15T10:00:00Z", "amount": 500.00, "type": "ACH_IN", "counterparty": "Payroll Co", "channel": "ach"},
+  {"_id": "txn_F90004", "account_id": "acct_F1003", "ts": "2026-04-22T19:12:00Z", "amount": -212.50, "type": "CARD_DEBIT", "counterparty": "Online Merchant", "channel": "ecom"},
+  {"_id": "txn_F90005", "account_id": "acct_F1004", "ts": "2026-04-23T02:17:00Z", "amount": -9800.00, "type": "WIRE_OUT", "counterparty": "overseas-bank", "channel": "online"},
+  {"_id": "txn_F90006", "account_id": "acct_F1004", "ts": "2026-04-23T02:14:00Z", "amount": 0.00, "type": "PAYEE_ADD", "counterparty": "overseas-bank", "channel": "online"},
+  {"_id": "txn_F90007", "account_id": "acct_F1004", "ts": "2026-04-23T02:10:00Z", "amount": 0.00, "type": "PASSWORD_RESET", "counterparty": null, "channel": "online"}
+]

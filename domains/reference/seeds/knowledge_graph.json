@@ -1,0 +1,10 @@
+[
+  {
+    "text": "The researcher subagent calls web_search to query Tavily, then fetch_and_cache to ingest the canonical URL into the knowledge_base collection. Subsequent queries can answer from the knowledge base.",
+    "metadata": {"source": "research-flow"}
+  },
+  {
+    "text": "The virtual filesystem persists bytes in GridFS (or S3) and metadata in the vfs_files collection. Every file is scoped by thread_id so threads cannot read each other's artifacts.",
+    "metadata": {"source": "vfs-overview"}
+  }
+]

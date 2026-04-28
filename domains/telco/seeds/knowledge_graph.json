@@ -1,0 +1,14 @@
+[
+  {
+    "text": "A subscriber is assigned to exactly one plan at a time. A plan carries an SLA tier that determines MTTR targets for tickets opened against that subscriber. A ticket may be linked to one or more subscribers when a cell-site event affects many.",
+    "metadata": {"source": "kg/subscriber-plan-ticket"}
+  },
+  {
+    "text": "A cell tower serves multiple eNodeBs (LTE) or gNodeBs (5G). A subscriber camps on the best-signal cell; handoff occurs when the neighbor-cell RSRP exceeds the serving-cell RSRP by the hysteresis threshold (typically 3 dB).",
+    "metadata": {"source": "kg/tower-cell-handoff"}
+  },
+  {
+    "text": "SIM-swap fraud chain: attacker harvests credentials (phishing) -> resets account password -> social-engineers retail store -> ports MSISDN to new SIM -> intercepts MFA SMS -> drains financial account. Breaking any link stops the chain; the support-flow break point is refusing the SIM swap.",
+    "metadata": {"source": "kg/sim-swap-fraud-chain"}
+  }
+]

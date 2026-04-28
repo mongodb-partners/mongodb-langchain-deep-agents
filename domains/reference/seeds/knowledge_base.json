@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Atlas Vector Search indexes embedding vectors alongside the source documents and queries them via the $vectorSearch aggregation stage.",
+    "metadata": {"source": "docs/vector-search-overview", "category": "search"}
+  },
+  {
+    "text": "The LangChain deepagents package composes a main planning agent with a todo list, a virtual filesystem, and named subagents. The main agent delegates sub-tasks via the task tool.",
+    "metadata": {"source": "docs/deepagents-overview", "category": "orchestration"}
+  },
+  {
+    "text": "MongoDBSaver persists LangGraph checkpoints to two collections so long-running agent sessions resume from the exact super-step they left off.",
+    "metadata": {"source": "docs/mongodb-saver", "category": "persistence"}
+  }
+]

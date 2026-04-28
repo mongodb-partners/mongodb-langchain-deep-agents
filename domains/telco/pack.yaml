@@ -1,0 +1,11 @@
+name: telco
+description: >
+  Telecommunications-operations pack. The knowledge base covers MTTR
+  targets, SLA-breach escalation, LTE-to-5G handoff, SIM-swap fraud, and
+  OTT interop; operational collections model subscribers, tickets, and
+  plans. Users are NOC staff, tier-2 support, and field ops - never end
+  subscribers.
+allow_list:
+  - subscribers
+  - tickets
+  - rate_plans

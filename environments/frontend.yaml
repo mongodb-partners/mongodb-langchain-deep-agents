@@ -1,0 +1,5 @@
+# Deep Agents - React/Vite frontend (nginx proxies /api/* to the backend).
+# No secrets needed: static files only.
+
+env:
+    APP_ENV: staging

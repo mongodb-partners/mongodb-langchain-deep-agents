@@ -1,0 +1,11 @@
+name: retail
+description: >
+  Retail / e-commerce operations pack. The knowledge base covers return
+  policy, promotion stacking, shipping SLAs, price-match rules, and
+  loyalty tiers; operational collections model orders, customers, and
+  products. Users are retail staff (CS agent, merchandising coord,
+  fulfillment lead) - never end shoppers.
+allow_list:
+  - orders
+  - customers
+  - products

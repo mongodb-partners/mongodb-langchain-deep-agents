@@ -1,0 +1,8 @@
+[
+  {"_id": "med_H50001", "patient_id": "pt_H001", "drug": "vancomycin", "dose": "125 mg", "route": "PO", "frequency": "QID", "start_ts": "2026-04-10T15:00:00Z", "stop_ts": null},
+  {"_id": "med_H50002", "patient_id": "pt_H002", "drug": "methylprednisolone", "dose": "40 mg", "route": "IV", "frequency": "Q6H", "start_ts": "2026-04-11T09:00:00Z", "stop_ts": null},
+  {"_id": "med_H50003", "patient_id": "pt_H003", "drug": "piperacillin-tazobactam", "dose": "4.5 g", "route": "IV", "frequency": "Q6H", "start_ts": "2026-04-12T23:05:00Z", "stop_ts": null},
+  {"_id": "med_H50004", "patient_id": "pt_H004", "drug": "apixaban", "dose": "5 mg", "route": "PO", "frequency": "BID", "start_ts": "2026-04-09T16:00:00Z", "stop_ts": "2026-04-14T08:00:00Z"},
+  {"_id": "med_H50005", "patient_id": "pt_H005", "drug": "albuterol", "dose": "2.5 mg", "route": "nebulized", "frequency": "Q4H PRN", "start_ts": "2026-04-13T02:30:00Z", "stop_ts": "2026-04-13T18:00:00Z"},
+  {"_id": "med_H50006", "patient_id": "pt_H003", "drug": "norepinephrine", "dose": "0.05 mcg/kg/min", "route": "IV", "frequency": "continuous", "start_ts": "2026-04-13T01:20:00Z", "stop_ts": null}
+]

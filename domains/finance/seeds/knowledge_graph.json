@@ -1,0 +1,18 @@
+[
+  {
+    "text": "A customer holds one or more accounts. An account of type CHECKING or SAVINGS is regulated by Regulation E for electronic fund transfers; an account of type CREDIT_CARD is regulated by Regulation Z. A transaction posts to one account and may have a counterparty identified by routing + account number.",
+    "metadata": {"source": "kg/customer-account-transaction"}
+  },
+  {
+    "text": "Account takeover is a fraud pattern signaled by (1) a login from a new device or geography, (2) a password reset, (3) a payee add, and (4) an outbound transfer within a short window. Each signal alone is benign; the sequence within 15 minutes is high-risk.",
+    "metadata": {"source": "kg/account-takeover-pattern"}
+  },
+  {
+    "text": "Structuring is a BSA violation pattern: splitting a single transaction into multiple sub-$10,000 pieces to evade the CTR threshold. Seen as multiple same-day deposits just below $10,000 across branches or channels.",
+    "metadata": {"source": "kg/structuring-indicators"}
+  },
+  {
+    "text": "UDAAP (Unfair, Deceptive, or Abusive Acts or Practices) is enforced by the CFPB. Overdraft fees without opt-in, surprise APR changes, and obscured dispute processes are common UDAAP findings.",
+    "metadata": {"source": "kg/udaap-common-findings"}
+  }
+]

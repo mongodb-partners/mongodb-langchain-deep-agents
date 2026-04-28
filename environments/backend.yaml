@@ -1,0 +1,64 @@
+# Deep Agents - Python FastAPI backend (deepagents planner + MongoDB Atlas)
+#
+# envSecrets: names-only references; actual values live in the K8s secret
+# `mongodb-langchain-deep-agents-secrets` (create once via kubectl — see
+# docs/DEPLOY.md "K8s secret setup").
+#
+# env: plain-text config mirrored from .env.example. Keep quoted strings for
+# numeric / boolean values — Helm treats unquoted values as raw YAML.
+
+envSecrets:
+    MONGODB_URI: mongodb-langchain-deep-agents-secrets
+    VOYAGE_API_KEY: mongodb-langchain-deep-agents-secrets
+    TAVILY_API_KEY: mongodb-langchain-deep-agents-secrets
+    AWS_ACCESS_KEY_ID: mongodb-langchain-deep-agents-secrets
+    AWS_SECRET_ACCESS_KEY: mongodb-langchain-deep-agents-secrets
+    LANGSMITH_API_KEY: mongodb-langchain-deep-agents-secrets
+
+env:
+    # Multi-domain mode: backend routes per-request via X-Domain header.
+    # MONGODB_DB is the prefix; per-domain code appends `_<pack>` suffix.
+    MONGODB_DB: deep_agents
+    DOMAIN: reference
+    DOMAINS_ROOT: /app/domains
+
+    # Voyage embeddings + rerank (asymmetric retrieval: voyage-4 for docs,
+    # voyage-4-lite for queries).
+    VOYAGE_BASE_URL: https://ai.mongodb.com/v1
+    VOYAGE_DOCUMENT_MODEL: voyage-4
+    VOYAGE_QUERY_MODEL: voyage-4-lite
+    VOYAGE_DIMENSIONS: "1024"
+    VOYAGE_RERANK_MODEL: rerank-2.5
+
+    # LLM (AWS Bedrock, Claude Opus 4.7 — the only model this session
+    # verified as stable for the multi-step planner loop).
+    LLM_PROVIDER: bedrock
+    LLM_MODEL: global.anthropic.claude-opus-4-7
+    AWS_DEFAULT_REGION: us-east-1
+
+    # Runtime tunables — keep aligned with .env defaults.
+    SEMANTIC_CACHE_THRESHOLD: "0.9"
+    MAX_HOPS: "80"
+    MAX_TOKENS: "32000"
+    MAX_STEPS: "32"
+
+    # VFS backend: S3 is the default (pods have no persistent local disk
+    # and every replica must see the same artifacts).
+    VFS_BACKEND: s3
+    VFS_S3_BUCKET: mdfaibucket
+    VFS_S3_PREFIX: deep-agent
+    VFS_S3_REGION: us-east-1
+
+    # Observability
+    LANGSMITH_TRACING: "true"
+    LANGSMITH_PROJECT: deep_agent
+
+    # Kanopy runtime
+    APP_ENV: staging
+    PYTHONUNBUFFERED: "1"
+
+    # CORS — match the ingress hosts rendered by .drone.yml.
+    FRONTEND_ORIGIN: https://mongodb-langchain-deep-agents.maap.staging.corp.mongodb.com
+    ALLOWED_ORIGINS: >-
+        https://mongodb-langchain-deep-agents.maap.staging.corp.mongodb.com,
+        https://mongodb-langchain-deep-agents-api.maap.staging.corp.mongodb.com

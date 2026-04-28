@@ -1,0 +1,10 @@
+name: reference
+description: >
+  Industry-neutral reference pack. The knowledge base covers MongoDB Atlas
+  Vector Search, hybrid search, and deep-agent architecture concepts;
+  operational collections model a generic orders/customers/products schema
+  suitable for demos and integration tests.
+allow_list:
+  - customers
+  - orders
+  - products

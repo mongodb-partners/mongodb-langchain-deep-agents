@@ -1,0 +1,26 @@
+[
+  {
+    "text": "MTTR (Mean Time To Repair) target for a Tier-1 SLA outage affecting more than 10,000 subscribers is 90 minutes from declared-start to green. Tier-2 SLA target is 240 minutes. Tier-3 (single-cell) is 24 hours. Breach triggers service-credit calculation per the MSA.",
+    "metadata": {"source": "runbook/sla-mttr-targets", "category": "incident"}
+  },
+  {
+    "text": "LTE-to-5G-NSA handoff failures cluster around X2 interface configuration. Check that the eNodeB advertises the correct gNodeB secondary cell in SIB2, that UE capabilities include EN-DC support, and that the MME has a valid S1-X2 mapping. A persistent failure rate above 3 percent on a single eNodeB warrants a cell-site visit.",
+    "metadata": {"source": "runbook/lte-5g-handoff", "category": "radio"}
+  },
+  {
+    "text": "SIM-swap fraud is signaled by a request to port a MSISDN to a new SIM within 24 hours of (1) a password reset on the customer portal, (2) a new login from an unrecognized device, or (3) an outbound high-value wire attempt. Any two of these signals within 24 hours must escalate to the fraud queue; the support agent SHALL NOT complete the SIM swap.",
+    "metadata": {"source": "runbook/sim-swap-fraud", "category": "fraud"}
+  },
+  {
+    "text": "HSS (Home Subscriber Server) stores authentication vectors and subscriber profile; AuC (Authentication Center) is the cryptographic subcomponent that generates challenge/response tuples. An HSS outage manifests as widespread authentication failures on attach; failover to a geo-redundant HSS is automatic if the diameter link is healthy.",
+    "metadata": {"source": "runbook/hss-auc-basics", "category": "core"}
+  },
+  {
+    "text": "IMS interop with OTT apps (WhatsApp, Signal) is out of scope for voice quality SLAs. Subscriber complaints about OTT call quality should be routed to the troubleshooting runbook that confirms the handset is on the carrier network and then closes the ticket as OTT-not-carrier.",
+    "metadata": {"source": "runbook/ott-interop", "category": "voice"}
+  },
+  {
+    "text": "eNodeB restart is a cell-impacting action. Prerequisites: confirm no active emergency calls on the cell (query MME for E911-active), schedule a 5-minute maintenance window, and notify the regional NOC. Soft restart completes in 3 to 4 minutes; hard restart triggers UE re-attach for all camped subscribers.",
+    "metadata": {"source": "runbook/enodeb-restart-prereq", "category": "radio"}
+  }
+]

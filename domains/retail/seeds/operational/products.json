@@ -1,0 +1,7 @@
+[
+  {"_id": "sku_RA100", "name": "All-Weather Jacket", "price": 349.99, "currency": "USD", "category": "outerwear", "in_stock": true},
+  {"_id": "sku_RA210", "name": "Merino Base Layer", "price": 79.00, "currency": "USD", "category": "baselayer", "in_stock": true},
+  {"_id": "sku_RA310", "name": "Trail Running Sock", "price": 19.50, "currency": "USD", "category": "accessory", "in_stock": true},
+  {"_id": "sku_RA520", "name": "Pro Sleeping Bag -20F", "price": 1245.00, "currency": "USD", "category": "sleep", "in_stock": false},
+  {"_id": "sku_RA910", "name": "Closeout Rain Cover (FINAL)", "price": 12.00, "currency": "USD", "category": "clearance", "in_stock": true}
+]

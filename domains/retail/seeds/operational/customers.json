@@ -1,0 +1,7 @@
+[
+  {"_id": "cust_R001", "name": "Lena Morales", "email": "lena@example.com", "tier": "gold", "region": "US-East", "joined_at": "2022-11-04"},
+  {"_id": "cust_R002", "name": "Bao Nguyen", "email": "bao@example.com", "tier": "silver", "region": "US-West", "joined_at": "2024-07-19"},
+  {"_id": "cust_R003", "name": "Kenji Watanabe", "email": "kenji@example.com", "tier": "platinum", "region": "US-West", "joined_at": "2020-05-11"},
+  {"_id": "cust_R004", "name": "Sara Koch", "email": "sara@example.com", "tier": "standard", "region": "EU", "joined_at": "2026-02-03"},
+  {"_id": "cust_R005", "name": "Michael O'Brien", "email": "mob@example.com", "tier": "silver", "region": "US-East", "joined_at": "2023-09-12"}
+]

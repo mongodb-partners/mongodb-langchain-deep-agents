@@ -1,0 +1,7 @@
+[
+  {"_id": "plan_T_GOLD", "name": "Gold Unlimited", "price_monthly": 85.00, "data_cap_gb": null, "voice_minutes": null, "sla_tier": 1},
+  {"_id": "plan_T_SILVER", "name": "Silver 30GB", "price_monthly": 55.00, "data_cap_gb": 30, "voice_minutes": null, "sla_tier": 2},
+  {"_id": "plan_T_BRONZE", "name": "Bronze 10GB", "price_monthly": 30.00, "data_cap_gb": 10, "voice_minutes": 500, "sla_tier": 3},
+  {"_id": "plan_T_FAMILY", "name": "Family Shared", "price_monthly": 140.00, "data_cap_gb": 100, "voice_minutes": null, "sla_tier": 2},
+  {"_id": "plan_T_IOT", "name": "IoT M2M", "price_monthly": 5.00, "data_cap_gb": 1, "voice_minutes": 0, "sla_tier": 3}
+]

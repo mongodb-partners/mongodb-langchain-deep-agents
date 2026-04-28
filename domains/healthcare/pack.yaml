@@ -1,0 +1,11 @@
+name: healthcare
+description: >
+  Healthcare / clinical-operations pack. The knowledge base covers
+  antibiotic stewardship, sepsis bundle timing, PHI redaction, and
+  discharge planning; operational collections model patients, encounters,
+  and medications. Users are clinical staff (case managers, pharmacists,
+  quality analysts) - never patients themselves.
+allow_list:
+  - patients
+  - encounters
+  - medications

@@ -1,0 +1,4 @@
+[
+  {"_id": "p-3001", "name": "Starter Cluster", "sku": "start-01"},
+  {"_id": "p-3002", "name": "Pro Cluster", "sku": "pro-01"}
+]

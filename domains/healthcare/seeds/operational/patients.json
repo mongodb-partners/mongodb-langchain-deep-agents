@@ -1,0 +1,7 @@
+[
+  {"_id": "pt_H001", "initials": "JM", "dob_yr": 1948, "sex": "M", "allergies": ["penicillin"], "problem_list": ["hypertension", "type 2 diabetes"]},
+  {"_id": "pt_H002", "initials": "AK", "dob_yr": 1962, "sex": "F", "allergies": [], "problem_list": ["COPD"]},
+  {"_id": "pt_H003", "initials": "RS", "dob_yr": 1979, "sex": "M", "allergies": ["sulfa"], "problem_list": ["prior CDI 2024-11"]},
+  {"_id": "pt_H004", "initials": "LC", "dob_yr": 1955, "sex": "F", "allergies": [], "problem_list": ["CKD stage 3", "atrial fibrillation"]},
+  {"_id": "pt_H005", "initials": "TB", "dob_yr": 1991, "sex": "F", "allergies": ["latex"], "problem_list": ["asthma"]}
+]

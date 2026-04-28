@@ -1,0 +1,14 @@
+[
+  {
+    "text": "An order is placed by exactly one customer and contains one or more line items. Each line item references a product by SKU and records the unit price at the time of sale. Loyalty-tier discount is applied based on the customer's tier at order time, not at shipment time.",
+    "metadata": {"source": "kg/order-customer-product"}
+  },
+  {
+    "text": "A promotion is identified by a promo code. A promotion has a type (percentage, fixed-dollar, loyalty-tier-linked) and an exclusivity flag. Two promotions may stack only if neither is marked exclusive and their type combination satisfies the stacking matrix.",
+    "metadata": {"source": "kg/promotion-stacking"}
+  },
+  {
+    "text": "A product family groups SKUs that differ by color or size. Return policy applies to the product family, not the SKU - a size exchange within the family is always permitted even after the standard return window if the item is unworn.",
+    "metadata": {"source": "kg/product-family-returns"}
+  }
+]

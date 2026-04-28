@@ -1,0 +1,7 @@
+[
+  {"_id": "ord_R5001", "customer_id": "cust_R001", "total": 628.99, "status": "delivered", "created_at": "2026-04-02T10:00:00Z", "items": [{"sku": "sku_RA100", "qty": 1, "unit_price": 349.99}, {"sku": "sku_RA210", "qty": 2, "unit_price": 139.50}]},
+  {"_id": "ord_R5002", "customer_id": "cust_R002", "total": 79.00, "status": "in-transit", "created_at": "2026-04-22T14:11:00Z", "items": [{"sku": "sku_RA310", "qty": 1, "unit_price": 79.00}]},
+  {"_id": "ord_R5003", "customer_id": "cust_R003", "total": 1245.00, "status": "delivered", "created_at": "2026-03-18T08:45:00Z", "items": [{"sku": "sku_RA520", "qty": 1, "unit_price": 1245.00}]},
+  {"_id": "ord_R5004", "customer_id": "cust_R001", "total": 0.00, "status": "cancelled-fraud-review", "created_at": "2026-04-25T02:30:00Z", "items": [{"sku": "sku_RA100", "qty": 5, "unit_price": 349.99}]},
+  {"_id": "ord_R5005", "customer_id": "cust_R004", "total": 45.50, "status": "delivered", "created_at": "2026-04-10T16:20:00Z", "items": [{"sku": "sku_RA210", "qty": 1, "unit_price": 45.50}]}
+]

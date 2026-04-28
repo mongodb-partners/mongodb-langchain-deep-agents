@@ -1,0 +1,11 @@
+name: finance
+description: >
+  Retail-banking operations pack. The knowledge base covers Regulation E
+  (EFTA) dispute timelines, Regulation Z (Truth in Lending), PAN masking,
+  overdraft and wire-transfer policy; operational collections model
+  accounts, transactions, and customers. Users are bank staff (disputes
+  analyst, fraud investigator, personal banker) - never account holders.
+allow_list:
+  - accounts
+  - transactions
+  - customers

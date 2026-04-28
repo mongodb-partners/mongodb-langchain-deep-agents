@@ -1,0 +1,30 @@
+[
+  {
+    "text": "Regulation E (12 CFR 1005.11) gives a consumer 60 days from the date a periodic statement is sent to notify the financial institution of an unauthorized electronic fund transfer. The institution must investigate and complete its investigation within 10 business days, or 45 days if it provisionally credits the account.",
+    "metadata": {"source": "reg/regulation-e-dispute-window", "category": "disputes"}
+  },
+  {
+    "text": "Regulation E liability caps: $50 if the consumer notifies within 2 business days of learning of loss or theft; $500 if between 3 and 60 days; unlimited beyond 60 days. For unauthorized transfers not involving a lost or stolen access device, the consumer's liability is zero if they notify within 60 days.",
+    "metadata": {"source": "reg/regulation-e-liability", "category": "disputes"}
+  },
+  {
+    "text": "Regulation Z (12 CFR 1026) requires annual percentage rate (APR) disclosure for closed-end consumer credit. The billing-error resolution process under 1026.13 applies to open-end accounts and runs 60 days from when the statement was sent.",
+    "metadata": {"source": "reg/regulation-z-apr-billing-error", "category": "lending"}
+  },
+  {
+    "text": "The Bank Secrecy Act requires a Currency Transaction Report (CTR) for cash transactions over $10,000 in a single business day and a Suspicious Activity Report (SAR) for transactions aggregating $5,000 or more where the activity appears designed to evade reporting requirements.",
+    "metadata": {"source": "reg/bsa-ctr-sar-thresholds", "category": "aml"}
+  },
+  {
+    "text": "PCI DSS requirement 3.3 permits display of at most the first six and last four digits of a primary account number (PAN) to authorized personnel with a legitimate business need. Full PAN must be masked to BIN + last-4 in customer-facing channels.",
+    "metadata": {"source": "policy/pci-dss-3.3-pan-masking", "category": "privacy"}
+  },
+  {
+    "text": "Consumers must affirmatively opt in to overdraft coverage for ATM and one-time debit card transactions per Regulation E 1005.17. An overdraft fee charged without opt-in is a UDAAP violation.",
+    "metadata": {"source": "reg/regulation-e-overdraft-opt-in", "category": "overdraft"}
+  },
+  {
+    "text": "Wire-transfer cutoff for same-day Fedwire processing is 5:00 PM ET on business days. International wires require OFAC screening regardless of amount; domestic wires trigger enhanced review above $100,000.",
+    "metadata": {"source": "policy/wire-transfer-cutoffs", "category": "payments"}
+  }
+]

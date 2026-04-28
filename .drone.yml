@@ -1,0 +1,93 @@
+---
+kind: pipeline
+type: kubernetes
+name: default
+
+platform:
+  arch: arm64
+
+trigger:
+  branch:
+  - main
+
+steps:
+
+# ===========================================
+# Build and Publish Docker Images to ECR
+# ===========================================
+
+- name: publish-backend
+  image: plugins/kaniko-ecr
+  settings:
+    create_repository: true
+    registry: 795250896452.dkr.ecr.us-east-1.amazonaws.com
+    repo: maap/${DRONE_REPO_NAME}/backend
+    tags:
+    - git-${DRONE_COMMIT_SHA:0:7}
+    - latest
+    dockerfile: Dockerfile
+    context: .
+    access_key:
+      from_secret: ecr_access_key
+    secret_key:
+      from_secret: ecr_secret_key
+  when:
+    event:
+    - push
+
+- name: publish-frontend
+  image: plugins/kaniko-ecr
+  settings:
+    create_repository: true
+    registry: 795250896452.dkr.ecr.us-east-1.amazonaws.com
+    repo: maap/${DRONE_REPO_NAME}/frontend
+    tags:
+    - git-${DRONE_COMMIT_SHA:0:7}
+    - latest
+    dockerfile: frontend/Dockerfile.k8s
+    context: frontend
+    access_key:
+      from_secret: ecr_access_key
+    secret_key:
+      from_secret: ecr_secret_key
+  when:
+    event:
+    - push
+
+# ===========================================
+# Deploy to Staging
+# ===========================================
+
+- name: deploy-backend-staging
+  image: public.ecr.aws/kanopy/drone-helm:v3
+  settings:
+    chart: mongodb/web-app
+    chart_version: 4.25.0
+    add_repos: [mongodb=https://10gen.github.io/helm-charts]
+    namespace: maap
+    release: mongodb-langchain-deep-agents-backend
+    values_files: ["environments/backend.yaml"]
+    values: arch=arm64,image.tag=git-${DRONE_COMMIT_SHA:0:7},image.repository=795250896452.dkr.ecr.us-east-1.amazonaws.com/maap/${DRONE_REPO_NAME}/backend,service.targetPort=8000,ingress.enabled=true,ingress.hosts[0]=mongodb-langchain-deep-agents-api.maap.staging.corp.mongodb.com,mesh.enabled=true,resources.limits.cpu=2000m,resources.limits.memory=4Gi,resources.requests.cpu=1000m,resources.requests.memory=2Gi
+    api_server: https://api.staging.corp.mongodb.com
+    kubernetes_token:
+      from_secret: staging_kubernetes_token
+  when:
+    event:
+    - push
+
+- name: deploy-frontend-staging
+  image: public.ecr.aws/kanopy/drone-helm:v3
+  settings:
+    chart: mongodb/web-app
+    chart_version: 4.25.0
+    add_repos: [mongodb=https://10gen.github.io/helm-charts]
+    namespace: maap
+    release: mongodb-langchain-deep-agents-frontend
+    values_files: ["environments/frontend.yaml"]
+    values: arch=arm64,image.tag=git-${DRONE_COMMIT_SHA:0:7},image.repository=795250896452.dkr.ecr.us-east-1.amazonaws.com/maap/${DRONE_REPO_NAME}/frontend,service.targetPort=3000,ingress.enabled=true,ingress.hosts[0]=mongodb-langchain-deep-agents.maap.staging.corp.mongodb.com,mesh.enabled=true,resources.limits.cpu=1000m,resources.limits.memory=512Mi,resources.requests.cpu=500m,resources.requests.memory=256Mi
+    api_server: https://api.staging.corp.mongodb.com
+    kubernetes_token:
+      from_secret: staging_kubernetes_token
+  when:
+    event:
+    - push

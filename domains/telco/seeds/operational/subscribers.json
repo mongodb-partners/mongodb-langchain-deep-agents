@@ -1,0 +1,7 @@
+[
+  {"_id": "sub_T001", "msisdn_last4": "4817", "plan_id": "plan_T_GOLD", "status": "active", "sim_last_swap": "2024-08-02"},
+  {"_id": "sub_T002", "msisdn_last4": "9203", "plan_id": "plan_T_SILVER", "status": "active", "sim_last_swap": null},
+  {"_id": "sub_T003", "msisdn_last4": "1155", "plan_id": "plan_T_GOLD", "status": "suspended-billing", "sim_last_swap": "2022-03-19"},
+  {"_id": "sub_T004", "msisdn_last4": "6621", "plan_id": "plan_T_BRONZE", "status": "active", "sim_last_swap": "2026-04-23"},
+  {"_id": "sub_T005", "msisdn_last4": "3388", "plan_id": "plan_T_SILVER", "status": "active", "sim_last_swap": null}
+]

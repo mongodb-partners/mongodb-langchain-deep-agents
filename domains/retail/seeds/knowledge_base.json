@@ -1,0 +1,30 @@
+[
+  {
+    "text": "The standard return window is 30 days from the delivery date, shown on the customer's order history. Items must be in original packaging with tags attached. Intimate apparel, opened software, and items tagged final-sale are non-returnable.",
+    "metadata": {"source": "policy/returns-standard-window", "category": "returns"}
+  },
+  {
+    "text": "Promotion stacking rules: at most one percentage-off discount AND one fixed-dollar discount AND the customer's loyalty-tier discount may combine on a single order. Two percentage-off discounts never stack. Promo codes marked EXCLUSIVE do not stack with anything.",
+    "metadata": {"source": "policy/promo-stacking", "category": "promotion"}
+  },
+  {
+    "text": "Shipping SLAs: Standard ground is 3-5 business days in the continental US and 5-7 business days elsewhere. Expedited is 2 business days. Overnight is next business day if ordered before 2 PM local warehouse time.",
+    "metadata": {"source": "policy/shipping-slas", "category": "fulfillment"}
+  },
+  {
+    "text": "Price-match: the item must be identical (same SKU, color, size), sold by a listed authorized competitor, currently in stock at that competitor, and advertised at the lower price. Match honored within 14 days of the customer's original purchase. Clearance, open-box, and refurbished listings are excluded.",
+    "metadata": {"source": "policy/price-match-rules", "category": "pricing"}
+  },
+  {
+    "text": "Loyalty tiers: Silver unlocked at $500 lifetime spend (free standard shipping). Gold at $2,000 (free expedited shipping + birthday coupon). Platinum at $5,000 (Gold benefits + a dedicated concierge line + early access to new launches).",
+    "metadata": {"source": "policy/loyalty-tiers", "category": "loyalty"}
+  },
+  {
+    "text": "Return-fraud indicators: (1) returns initiated within minutes of delivery, (2) returns of items shipped to an address different from the billing address, (3) repeat returns exceeding 30 percent of lifetime orders by volume, (4) returns of used-then-cleaned items. Two or more signals triggers loss-prevention review.",
+    "metadata": {"source": "policy/return-fraud-indicators", "category": "loss-prevention"}
+  },
+  {
+    "text": "Final-sale items are marked with a FINAL tag on the product page and order confirmation. Returns, exchanges, and price adjustments are not available on final-sale items. This policy is enforced at both the order-entry and post-order stages.",
+    "metadata": {"source": "policy/final-sale", "category": "returns"}
+  }
+]

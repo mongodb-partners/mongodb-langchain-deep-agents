@@ -1,0 +1,7 @@
+[
+  {"_id": "cust_F501", "name": "Maria Chen", "tier": "standard", "joined": "2022-05-14", "kyc_level": "enhanced"},
+  {"_id": "cust_F502", "name": "David Okafor", "tier": "premier", "joined": "2023-11-02", "kyc_level": "enhanced"},
+  {"_id": "cust_F503", "name": "Priya Rao", "tier": "standard", "joined": "2021-03-30", "kyc_level": "enhanced"},
+  {"_id": "cust_F504", "name": "Sam Patel", "tier": "standard", "joined": "2026-01-08", "kyc_level": "basic"},
+  {"_id": "cust_F505", "name": "Julia Reyes", "tier": "premier", "joined": "2019-07-21", "kyc_level": "enhanced"}
+]

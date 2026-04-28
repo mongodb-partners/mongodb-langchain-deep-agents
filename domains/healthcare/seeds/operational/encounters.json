@@ -1,0 +1,7 @@
+[
+  {"_id": "enc_H9001", "patient_id": "pt_H001", "admit_ts": "2026-04-10T14:22:00Z", "discharge_ts": "2026-04-13T11:05:00Z", "unit": "6-West-Med", "primary_dx": "CDI, non-severe"},
+  {"_id": "enc_H9002", "patient_id": "pt_H002", "admit_ts": "2026-04-11T08:00:00Z", "discharge_ts": null, "unit": "4-East-Pulm", "primary_dx": "COPD exacerbation"},
+  {"_id": "enc_H9003", "patient_id": "pt_H003", "admit_ts": "2026-04-12T22:47:00Z", "discharge_ts": null, "unit": "ICU-A", "primary_dx": "sepsis, source pending"},
+  {"_id": "enc_H9004", "patient_id": "pt_H004", "admit_ts": "2026-04-09T15:30:00Z", "discharge_ts": "2026-04-14T10:00:00Z", "unit": "5-North-Cards", "primary_dx": "AF with RVR"},
+  {"_id": "enc_H9005", "patient_id": "pt_H005", "admit_ts": "2026-04-13T02:15:00Z", "discharge_ts": "2026-04-13T19:40:00Z", "unit": "ED-Obs", "primary_dx": "asthma exacerbation"}
+]
