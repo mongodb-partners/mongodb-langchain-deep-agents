@@ -1,0 +1,40 @@
+---
+title: LangChain Deep Agents on MongoDB Atlas
+---
+flowchart LR
+subgraph clients[Interfaces]
+CLI["CLI"]
+API["FastAPI<br/>/chat SSE"]
+Studio["LangGraph Studio"]
+end
+subgraph agent[Deep agent planner]
+Main["Main agent<br/>write_todos plan loop"]
+Res["Researcher subagent<br/>isolated context"]
+Tools["Tools<br/>KB search, graph, NL to MQL, web, memory, files"]
+end
+subgraph models[Models]
+Bedrock["AWS Bedrock<br/>Claude"]
+Voyage["Voyage AI<br/>embeddings and rerank"]
+Tavily["Tavily<br/>web search"]
+end
+subgraph atlas[MongoDB Atlas]
+State[("Checkpoints, memory,<br/>plans, chat history")]
+Know[("Vector KB, hybrid search,<br/>knowledge graph")]
+Ops[("Operational collections<br/>allow-listed")]
+VFS[("Virtual filesystem<br/>GridFS or S3")]
+end
+Pack["Domain pack<br/>DOMAIN env var"]
+CLI --> Main
+API --> Main
+Studio --> Main
+Pack -.-> Main
+Main --> Res
+Main --> Tools
+Res --> Tools
+Main --> Bedrock
+Tools --> Voyage
+Tools --> Tavily
+Main -.-> State
+Tools --> Know
+Tools --> Ops
+Tools --> VFS
