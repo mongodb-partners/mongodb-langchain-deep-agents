@@ -13,6 +13,9 @@ command. See [docs/domain-packs.md](docs/domain-packs.md).
 
 ## Architecture
 
+![Architecture](docs/images/architecture.svg)
+
+
 ```mermaid
 flowchart TB
     subgraph CLIENTS["Interfaces"]
